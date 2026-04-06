@@ -1,0 +1,5 @@
+{
+  "name": "Ferretería Once Express",
+  "description": "Landing page con ecommerce y chatbot IA para la mejor ferretería de la zona de Once, Capital Federal.",
+  "requestFramePermissions": ["geolocation"]
+}
