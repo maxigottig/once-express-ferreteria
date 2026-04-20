@@ -14,15 +14,14 @@ export default function AnimatedSection({ children, className, id }: AnimatedSec
   return (
     <motion.section
       id={id}
-      initial={{ opacity: 0, x: direction * 100 }}
+      initial={{ opacity: 0, x: direction * 50 }}
       whileInView={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ 
         type: "spring", 
         stiffness: 100, 
         damping: 20,
-        opacity: { duration: 0.5 }
+        opacity: { duration: 0.6 }
       }}
       className={className}
     >

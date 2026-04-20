@@ -36,26 +36,26 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <AnimatedSection id="servicios" className="py-24">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl font-bold mb-4">Nuestros Servicios</h2>
+    <AnimatedSection id="servicios" className="py-16">
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="font-display text-3xl font-bold mb-3">Nuestros Servicios</h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             Más que una ferretería, somos tu socio estratégico en cada obra, reparación o proyecto de hogar.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICES.map((service, idx) => (
             <div 
               key={idx}
-              className="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-brand-primary transition-all group"
+              className="p-6 rounded-3xl bg-slate-900 border border-slate-800 hover:border-brand-primary transition-all group"
             >
-              <div className="w-14 h-14 rounded-2xl bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-primary group-hover:text-slate-900 transition-all">
-                <service.icon size={28} />
+              <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brand-primary group-hover:text-slate-900 transition-all">
+                <service.icon size={24} />
               </div>
-              <h3 className="font-bold text-xl mb-3">{service.title}</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              <h3 className="font-bold text-lg mb-2">{service.title}</h3>
+              <p className="text-slate-400 text-xs leading-relaxed">
                 {service.description}
               </p>
             </div>

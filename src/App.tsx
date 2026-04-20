@@ -20,7 +20,7 @@ export default function App() {
   });
 
   return (
-    <div className="relative min-h-screen selection:bg-brand-primary selection:text-slate-900">
+    <div className="relative min-h-screen overflow-x-hidden selection:bg-brand-primary selection:text-slate-900 bg-slate-950">
       {/* Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-brand-primary z-[60] origin-left"

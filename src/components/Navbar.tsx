@@ -23,13 +23,13 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-4 py-3',
         isScrolled 
           ? 'bg-slate-900/80 backdrop-blur-md shadow-lg' 
           : 'bg-transparent'
       )}
     >
-      <div className="max-w-5xl mx-auto flex items-center justify-between">
+      <div className="max-w-4xl mx-auto flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2 group">
           <div className="bg-brand-primary p-2 rounded-lg group-hover:rotate-12 transition-transform">
             <Hammer className="text-slate-900" size={24} />

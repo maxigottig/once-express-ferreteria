@@ -3,11 +3,11 @@ import AnimatedSection from './AnimatedSection';
 
 export default function Footer() {
   return (
-    <AnimatedSection id="contacto" className="bg-slate-900 text-slate-100 pt-20 pb-10">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+    <AnimatedSection id="contacto" className="bg-slate-900 text-slate-100 pt-16 pb-8">
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
           {/* Brand */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="bg-brand-primary p-2 rounded-lg">
                 <Hammer className="text-slate-900" size={24} />

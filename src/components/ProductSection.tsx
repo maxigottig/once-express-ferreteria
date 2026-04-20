@@ -55,20 +55,20 @@ const PRODUCTS = [
 
 export default function ProductSection() {
   return (
-    <AnimatedSection id="productos" className="py-24 bg-slate-50 dark:bg-slate-900/50">
-      <div className="max-w-5xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div>
-            <h2 className="font-display text-4xl font-bold mb-4">Productos Destacados</h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-xl">
+    <AnimatedSection id="productos" className="py-16 bg-slate-950/20">
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 text-center md:text-left">
+          <div className="flex-1">
+            <h2 className="font-display text-3xl font-bold mb-3">Productos Destacados</h2>
+            <p className="text-slate-400 max-w-xl mx-auto md:mx-0">
               Equipamiento profesional para tus proyectos. Calidad certificada y garantía oficial en cada compra.
             </p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
             {['Todos', 'Eléctricas', 'Manuales', 'Hogar'].map((cat) => (
               <button 
                 key={cat}
-                className="px-4 py-2 rounded-full text-sm font-bold border border-slate-200 dark:border-slate-700 hover:bg-brand-primary hover:border-brand-primary hover:text-slate-900 transition-all"
+                className="whitespace-nowrap px-4 py-2 rounded-full text-xs font-bold border border-slate-700 hover:bg-brand-primary hover:border-brand-primary hover:text-slate-900 transition-all shrink-0"
               >
                 {cat}
               </button>
@@ -76,15 +76,15 @@ export default function ProductSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {PRODUCTS.map((product, idx) => (
             <motion.div
               key={product.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1 }}
+              transition={{ delay: idx * 0.05 }}
               viewport={{ once: true }}
-              className="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700"
+              className="group bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-800"
             >
               <div className="relative aspect-square overflow-hidden">
                 <img 
